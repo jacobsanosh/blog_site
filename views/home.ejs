@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+
+    <h1>home section</h1>
+    <p>
+        <%= home_c%>
+    </p>
+    <div class="note_section">
+        <% if(res.length==0){%>
+            <h2>nothing in the list</h2>
+            <%}else{%>
+                <h1>your notes are</h1>
+                <%res.forEach((ele)=>{%>
+                    <h2>
+                        <%= ele.title%>
+                    </h2>
+                    <p>
+                        <%= ele.note.substring(0,100)+'...'%><a href="/post/<%=ele.title%>">Read more</a>
+                    </p>
+                    <%});}%>
+
+    </div>
+
+
+    <%- include('partials/footer'); -%>

@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    background: linear-gradient(indigo, violet);
+    padding: 1rem;
+    font-size: 64px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav_ul {
+    font-size: 1.5rem;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_ul li {
+    list-style: none;
+}
+
+.nav_ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.note_section {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    background-color: cyan;
+}
+
+.note_section h1 {
+    text-align: center;
+}
+
+#add {
+    display: block;
+    width: 20%;
+    padding: 1rem;
+    border-radius: 42px;
+    border: none;
+    margin: auto;
+}
+
+.note {
+    width: 40%;
+    border-radius: 23px;
+    display: flex;
+    margin: 1rem auto;
+    border: none;
+    padding: 1rem;
+}

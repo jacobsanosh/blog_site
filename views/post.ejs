@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+    <h1>post section</h1>
+    <div class="note_section">
+        <%if(res){%>
+            <h1>results are</h1>
+            <h2>
+                <%= res.title %>
+            </h2>
+            <p>
+                <%= res.note%>
+            </p>
+            <%}else{%>
+                <h1>404 error</h1>
+                <%}%>
+
+    </div>
+    <%- include('partials/footer') -%>

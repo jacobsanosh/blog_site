@@ -1,0 +1,9 @@
+<%- include('partials/header') -%>
+    <form action="/compose" method="POST">
+        <div class="note_section">
+            <input type="text" name="title" class="note" placeholder="Enter the title" autocomplete="off">
+            <textarea name="note" class="note" cols="30" rows="10" placeholder="Enter the note" autocomplete="off"></textarea>
+            <button type="submit" id="add">ADD</button>
+        </div>
+    </form>
+    <%- include('partials/footer') -%>
